@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>A Casa dos Sussurros</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png">
+            <p>Você e seus amigos estão em uma viagem e se deparam com uma antiga mansão abandonada no meio da floresta.
+                A noite está chegando, e a neblina cobre o chão. Vocês decidem explorar a mansão.</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na mansão.</button>
+            <button class="btn-proximo" data-proximo="2">Ir embora.</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png">
+            <p>Ao entrar na mansão, vocês percebem que tudo está coberto de poeira e teias de aranha. O ar está pesado e
+                há um leve som de sussurros ecoando. De repente, a porta atrás de vocês se fecha sozinha.</p>
+            <button class="btn-proximo" data-proximo="3">Explorar o andar de baixo.</button>
+            <button class="btn-proximo" data-proximo="4">Subir as escadas para o andar de cima.</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2.png">
+            <p>Vocês decidem não entrar, mas enquanto se afastam, um nevoeiro denso os envolve, e a estrada desaparece.
+                Vocês estão perdidos na floresta. Ao tentar encontrar o caminho de volta, ouvem passos atrás de vocês.
+            </p>
+            <button class="btn-proximo" data-proximo="5">Correr para o interior da floresta.</button>
+            <button class="btn-proximo" data-proximo="1">Voltar para a mansão.</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo3.png">
+            <p>Vocês caminham pelos corredores escuros e encontram uma porta entreaberta que dá para o porão. Sussurros
+                aumentam de intensidade, e uma sombra se move no fundo do corredor.</p>
+            <button class="btn-proximo" data-proximo="6">Entrar no porão.</button>
+            <button class="btn-proximo" data-proximo="7">Ignorar o porão e continuar explorando.</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4.png">
+            <p>Ao subir as escadas, elas rangem como se alguém estivesse acompanhando vocês. No topo, há dois quartos
+                com as portas entreabertas. Um cheiro de mofo preenche o ar.</p>
+            <button class="btn-proximo" data-proximo="8">Entrar no primeiro quarto à esquerda.</button>
+            <button class="btn-proximo" data-proximo="9">Entrar no quarto à direita.</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5.png">
+            <p>Vocês correm pela floresta, mas a cada passo, a neblina parece engolir mais o caminho. As árvores parecem
+                se mover, e um som metálico pode ser ouvido. De repente, vocês encontram uma cabana isolada.</p>
+            <button class="btn-proximo" data-proximo="10">Entrar na cabana.</button>
+            <button class="btn-proximo" data-proximo="11">Ignorar a cabana e continuar correndo.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Ao descer para o porão, vocês sentem um cheiro forte de podridão. No fundo, uma velha cadeira de
+                balanço se move sozinha. De repente, uma mão fria toca seu ombro.</p>
+            <img src="img/cenario-passo(falece).png">
+            <p2>Você se vira, mas não há ninguém. A porta do porão se fecha, e vocês estão presos com as almas que nunca
+                saíram da mansão.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7.png">
+            <p>Continuando pelo corredor, vocês encontram um velho salão de baile. O chão range, e uma pintura antiga de
+                uma família os observa. Uma risada baixa ecoa pelas paredes.</p>
+            <button class="btn-proximo" data-proximo="12">Investigar a risada.</button>
+            <button class="btn-proximo" data-proximo="13">Tentar encontrar uma saída da mansão.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>O quarto está coberto de poeira e papéis velhos espalhados pelo chão. No canto, há um espelho
+                quebrado. Ao olhar no espelho, você vê um reflexo que não deveria estar lá.</p>
+            <img src="img/cenario-passo(falece).png">
+            <p2>Você tenta se afastar, mas o reflexo sorri para você. A porta se tranca, e agora você é parte da mansão.
+            </p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-passo9.png">
+            <p>No segundo quarto, há uma cama velha e uma janela quebrada. Uma boneca de porcelana está sentada na
+                cadeira, olhando diretamente para a porta. Ela pisca.</p>
+            <button class="btn-proximo" data-proximo="14">Se aproximar da boneca.</button>
+            <button class="btn-proximo" data-proximo="15">Sair rapidamente do quarto.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Vocês entram na cabana, mas ela está vazia. Apenas o som da chuva batendo no telhado. No entanto, há
+                símbolos estranhos desenhados nas paredes com algo que parece ser sangue seco.</p>
+            <img src="img/cenario-passo(falece).png">
+            <p2>As luzes piscam e, de repente, tudo fica escuro. Vocês nunca mais são vistos.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Vocês correm pela floresta sem olhar para trás. Eventualmente, a neblina se dissipa e a estrada aparece
+                novamente. Vocês estão a salvo, mas algo na escuridão os observa.</p>
+            <img src="img/cenario-passo(sobrevive).png">
+            <p2>Vocês conseguiram escapar, mas a sensação de estarem sendo seguidos nunca desaparece.
+            </p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Vocês seguem o som da risada até um armário antigo. Ao abri-lo, uma figura espectral salta em direção a
+                vocês, atravessando seus corpos.</p>
+            <img src="img/cenario-passo(falece).png">
+            <p2>Vocês caem no chão, congelados pelo medo, e a figura desaparece. Agora, vocês pertencem à casa.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="img/cenario-passo13.png">
+            <p>Vocês correm em direção à saída, mas a porta está trancada. Algo está se aproximando. Vocês ouvem passos
+                pesados atrás de vocês.</p>
+            <button class="btn-proximo" data-proximo="16">Procurar outra saída.</button>
+            <button class="btn-proximo" data-proximo="17">Se esconder.</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>Quando você se aproxima da boneca, seus olhos se movem, e ela sussurra algo inaudível. De repente, ela
+                cai da cadeira e começa a rastejar em sua direção.</p>
+            <img src="img/cenario-passo(falece).png">
+            <p2>A boneca agarra seu tornozelo, e tudo fica escuro. Agora, você faz parte do seu jogo.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <img src="img/cenario-passo15.png">
+            <p>Vocês saem correndo do quarto e voltam para o corredor principal. A porta da mansão está aberta.</p>
+            <button class="btn-proximo" data-proximo="18">Correr para fora da mansão.</button>
+            <button class="btn-proximo" data-proximo="19">Tentar investigar mais um pouco.</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <p>Vocês encontram uma janela aberta no corredor e decidem pular. Ao sair, vocês ouvem sussurros chamando
+                seus nomes.</p>
+            <img src="img/cenario-passo(sobrevive).png">
+            <p2>Vocês escapam, mas os sussurros da mansão os perseguem para sempre.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+
+        <div class="passo" id="passo-17">
+            <p>Vocês se escondem atrás de uma estante, mas os passos se aproximam. Algo está respirando pesado do outro
+                lado.</p>
+            <img src="img/cenario-passo(falece).png">
+            <p2>A criatura encontra vocês e, antes que possam reagir, tudo fica escuro.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <p>Vocês correm para fora da mansão, o ar frio da noite os recebe. Ao olhar para trás, a mansão desapareceu.
+                O que era real?</p>
+            <img src="img/cenario-passo(sobrevive).png">
+            <p2>Vocês sobreviveram, mas algo da mansão ainda está com vocês.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <p>Vocês decidem explorar o último quarto, mas quando abrem a porta, uma luz branca cegante os engole. Ao
+                acordarem, estão do lado de fora da mansão, mas com a sensação de que algo foi deixado para trás.</p>
+            <img src="img/cenario-passo(sobrevive).png">
+            <p2>Vocês estão a salvo, mas a curiosidade nunca os deixará em paz.</p2>
+            <button class="btn-proximo" data-proximo="0">Retornar ao passo 1</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
